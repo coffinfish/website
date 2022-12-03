@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "./style.css">
+        <title> seatoad </title>
+    </head>
+    <body>
+        <div class = "container">
+
+            <div class = "nav-container">
+                <ul class = "nav">
+                    <li class = "nav-item"> <a class = "nav-link" href = "#Home"> Home </a></li>
+                    <li class = "nav-item"> <a class = "nav-link" href = "#About">About </a></li>
+                    <li class = "nav-item"> <a class = "nav-link" href = "#Projects">Projects </a></li>
+                    <li class = "nav-item"> <a class = "nav-link" href = "#Contact">Contact </a></li>
+                </ul>
+            </div>
+
+            <div id = "home">
+                <div>
+                    <h1 class = "home-title">
+                        hi im seatoad
+                    </h1>
+                    <h2 class = "home-description">
+                        first year cs student
+                    </h2>
+                    <h2 class = "home-description">
+                        i am <span id = currentAge></span> !
+                    </h2>
+                    <div class = "home-button">
+                        <button class = "generic-button"> View More</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class = "content" id = "about">
+                <div class = "content-section-1">
+                    <img class="content-image" src = "" alt = "seatoad">
+                </div>
+    
+                <div class="content-section-2">
+                    <h2 class="content-section-title"> About Me </h2>
+                    <div class="content-section-text">
+                        <span class="auto-type"></span>
+                    </div>
+                    
+                </div>
+            </div>
+    
+            <div id = "projects">
+                <h2 class="content-section-title"> Projects </h2>
+                <div class="project-list">
+                    <!-- the fish project -->
+                    <div class="project-item">
+                        <div class="project-image-container">
+                            <img class="project-image-thumbnail" src="ducksquad.png" alt = "project item"/>
+                        </div>
+                        <div class = "project-text-container">
+                            <h3 class = "project-title"> a duck </h3>
+                            <div class = "content-section-text">
+                                <p> *bubbles* </p>
+                            </div>
+                            <a class="generic-button" href = ""> <button> View Project</button> </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+    
+            <div id = "contact">
+                <div>
+                    <h2> Contact Me </h2>
+                    <p> no >:( </p>
+                </div>
+                <div>
+                    <img src = "" alt = "a seatoad">
+                </div>
+            </div>
+        </div>
+        
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        let currentYear = new Date().getFullYear();
+        let birthYear = 2004;
+
+        document.getElementById("currentAge").innerHTML = currentYear-birthYear;
+
+        let typed = new Typed(".auto-type", {
+            strings: ["blub blub blub...^1000", "oh wait you don't speak fish?^1000", "that's too bad...^1000"],
+            typeSpeed: 50,
+            backSpeed: 100,
+            loop: true,
+            showCursoe: false,
+        })
+    </script>
+</html>
